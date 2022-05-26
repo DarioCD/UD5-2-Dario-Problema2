@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         VeredaGT veredaGT = new VeredaGT("123455-KKK", 100, 100, 19 );
-        veredaGT.energyLevel();
-        veredaGT.move();
-        veredaGT.move();
-        veredaGT.move();
-        veredaGT.status();
+        System.out.println("Nivel de energía actual: " + veredaGT.energyLevel());
+        for (int i = 0; i < 7; i++) {
+            veredaGT.move();
+        }
+        System.out.println(veredaGT.status());
         veredaGT.recharge();
-        veredaGT.status();
+        System.out.println(veredaGT.status());
     }
 }

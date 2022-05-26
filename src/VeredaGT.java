@@ -11,51 +11,12 @@ public class VeredaGT implements Vehicle{
         this.energy = energy;
         this.energyDelta = energyDelta;
     }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
-    public float getMaxEnergy() {
-        return maxEnergy;
-    }
-
-    public void setMaxEnergy(float maxEnergy) {
-        this.maxEnergy = maxEnergy;
-    }
-
-    public float getEnergy() {
-        return energy;
-    }
-
     public void setEnergy(float energy) {
         this.energy = energy;
     }
-
-    public int getMovementCount() {
-        return movementCount;
-    }
-
-    public void setMovementCount(int movementCount) {
-        this.movementCount = movementCount;
-    }
-
-    public float getEnergyDelta() {
-        return energyDelta;
-    }
-
-    public void setEnergyDelta(float energyDelta) {
-        this.energyDelta = energyDelta;
-    }
-
     @Override
     public float energyLevel() {
-        System.out.println("El nivel de bateria es: " + energy);
-        return 0;
+        return energy;
     }
 
     @Override
@@ -82,8 +43,7 @@ public class VeredaGT implements Vehicle{
 
     @Override
     public String status() {
-        System.out.println("El vehículo " + matricula + " tiene un nivel de carga de: " + energy + " y se ha " +
-                "movido " + movementCount + " veces.");
-        return null;
+        return "El vehículo " + matricula + " tiene un nivel de carga de: " + energy + " y se ha " +
+                "movido " + movementCount + " veces.";
     }
 }
