@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        VeredaGT veredaGT = new VeredaGT("123455-KKK", 100, 100, 19 );
+        veredaGT.energyLevel();
+        veredaGT.move();
+        veredaGT.move();
+        veredaGT.move();
+        veredaGT.status();
+        veredaGT.recharge();
+        veredaGT.status();
     }
 }
